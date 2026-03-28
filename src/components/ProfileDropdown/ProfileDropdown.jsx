@@ -115,7 +115,7 @@ export default function ProfileDropdown({
       </button>
 
       {isOpen && (
-        <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-50 animate-in fade-in slide-in-from-top-1">
+        <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-50 overflow-hidden animate-in fade-in slide-in-from-top-1">
           <div className="p-2 border-b border-gray-200">
             <input
               ref={searchRef}
@@ -164,7 +164,7 @@ export default function ProfileDropdown({
                 value={newName}
                 onChange={(e) => setNewName(e.target.value)}
                 onKeyDown={handleAddKeyDown}
-                className="flex-1 px-2.5 py-2 border border-gray-200 rounded-md text-sm outline-none focus:border-primary transition-colors"
+                className="flex-1 min-w-0 px-2.5 py-2 border border-gray-200 rounded-md text-sm outline-none focus:border-primary transition-colors"
                 disabled={adding}
               />
               <button
