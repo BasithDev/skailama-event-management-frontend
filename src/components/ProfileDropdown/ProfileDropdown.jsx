@@ -168,7 +168,7 @@ export default function ProfileDropdown({
                 disabled={adding}
               />
               <button
-                className="w-9 h-9 flex items-center justify-center bg-primary text-white rounded-md text-lg font-semibold hover:bg-primary-hover transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                className="w-9 h-9 shrink-0 flex items-center justify-center bg-primary text-white rounded-md text-lg font-semibold hover:bg-primary-hover transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                 onClick={handleAdd}
                 disabled={!newName.trim() || adding}
                 type="button"
